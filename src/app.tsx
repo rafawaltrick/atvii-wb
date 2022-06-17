@@ -1,10 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-import { AppRoutes } from "./componentes/Routes";
+import BarraNavegacao from "./componentes/barraNavegacao";
+import  AppRoutes  from "./componentes/Routes";
 
 export const App = () => {
     return (
         <BrowserRouter>
-            <AppRoutes /> 
+            <BarraNavegacao tema="purple lighten-4" botoes={['TOP-Clientes', 'Cadastros','Produtos','Servicos','Clientes']}/>
+            <AppRoutes />
         </BrowserRouter>
     );
 }

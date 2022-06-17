@@ -2,12 +2,11 @@
 import { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
-
+import { Link } from "react-router-dom";
 
 type props = {
     tema: string,
-    botoes: string[],
-    seletorView: Function
+    botoes: string[]
 }
 
 export default class BarraNavegacao extends Component<props> {
@@ -29,7 +28,7 @@ export default class BarraNavegacao extends Component<props> {
         } else {
             let lista = this.props.botoes.map(valor =>
                 
-                <li key={valor}><a onClick={(e) => this.props.seletorView(valor, e)}>{valor}</a></li> 
+                <li key={valor}><Link to = {valor} >{valor}</Link></li> 
             )
             return lista
         }

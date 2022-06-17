@@ -6,13 +6,12 @@ type props = {
 }
 
 
-export default class editCliente extends Component<props> {
+export default class EditCliente extends Component<props> {
 
     render() {
         let estiloBotao = `btn waves-effect waves-light ${this.props.tema}`
         return (
             <>
-            <h3 className="center">Cadastros</h3>
             <div className="row">
                 <form className="col s12 box1">
                     <div className="row">
