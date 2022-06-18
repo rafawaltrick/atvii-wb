@@ -1,6 +1,6 @@
 import { Component } from "react";
-
 import 'materialize-css/dist/css/materialize.min.css'
+import { Link } from "react-router-dom";
 
 type props = {
     tema: string
@@ -32,8 +32,12 @@ export default class Servicos extends Component<props> {
                                 <td>10</td>
                                 <td>tesoura e maquina</td>
                                 <td className="espaço">
-                                    <a href=""><i className="material-icons espaço1">edit</i></a>
-                                    <a href=""> <i className="material-icons espaço1 ">delete</i></a>
+                                    <Link to = "/editServico">
+                                        <i className="material-icons espaço1">edit</i>
+                                    </Link>
+                                    <Link to = "/">
+                                    <i className="material-icons espaço1 ">delete</i>
+                                    </Link>
                                 </td>
                             </tr>
                             <tr>
@@ -41,8 +45,12 @@ export default class Servicos extends Component<props> {
                                 <td>10</td>
                                 <td>tesoura e maquina</td>
                                 <td className="espaço">
-                                    <a href=""><i className="material-icons espaço1">edit</i></a>
-                                    <a href=""> <i className="material-icons espaço1 ">delete</i></a>
+                                    <Link to = "/editServico">
+                                        <i className="material-icons espaço1">edit</i>
+                                    </Link>
+                                    <Link to = "/">
+                                    <i className="material-icons espaço1 ">delete</i>
+                                    </Link>
                                 </td>
                             </tr>
                             

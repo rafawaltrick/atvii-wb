@@ -6,6 +6,8 @@ import Produtos from "./listagem/Produtos/Produtos";
 import Servicos from "./listagem/Servicos/Servicos";
 import Clientes from "./listagem/Clientes/Clientes";
 
+
+
 type state = {
     tela: string
 }
@@ -20,6 +22,12 @@ export default class Roteador extends Component<{}, state> {
         }
     }
 
+    componentDidMount() {
+        document.addEventListener('DOMContentLoaded', function () {
+            let elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems)
+        });
+    }
 
     selecionarView(novaTela: string, evento: Event) {
         evento.preventDefault()
@@ -71,5 +79,6 @@ export default class Roteador extends Component<{}, state> {
                 </>
             )
         }
+        
     }
 }

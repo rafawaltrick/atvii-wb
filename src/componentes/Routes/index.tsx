@@ -1,12 +1,17 @@
-import { Routes,Route, Navigate } from "react-router-dom";
+import { Routes,Route } from "react-router-dom";
 import ListaCliente from "../listaCliente";
 import FormularioCadastroCliente from "../formularioCadastroCliente";
 import Produtos from "../listagem/Produtos/Produtos";
 import Servicos from "../listagem/Servicos/Servicos";
 import Clientes from "../listagem/Clientes/Clientes";
-import BarraNavegacao from "../barraNavegacao";
 import { Component } from "react";
 import EditCliente from "../Atualizar/Clientes/editCliente";
+import EditProduto from "../Atualizar/Produtos/editProduto";
+import EditServico from "../Atualizar/Servicos/editServico";
+import Consumo from "../Consumo/ConsumoCli";
+
+
+
 
 type state = {
 }
@@ -30,6 +35,9 @@ export default class AppRoutes extends Component <{}, state> {
             <Route path="/Servicos" element={<Servicos tema="purple lighten-4"/>} />
             <Route path="/Clientes" element={<Clientes tema="purple lighten-4"/>} />
             <Route path="/editCliente" element={<EditCliente tema="purple lighten-4"/>} />
+            <Route path="/editProduto" element={<EditProduto tema="purple lighten-4"/>} />
+            <Route path="/editServico" element={<EditServico tema="purple lighten-4"/>} />
+            <Route path="/Consumo" element={<Consumo tema="purple lighten-4"/>} />
         </Routes> 
     );
     }

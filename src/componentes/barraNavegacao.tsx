@@ -14,6 +14,7 @@ export default class BarraNavegacao extends Component<props> {
         super(props)
         this.gerarListaBotoes = this.gerarListaBotoes.bind(this)
     }
+    
 
     componentDidMount() {
         document.addEventListener('DOMContentLoaded', function () {

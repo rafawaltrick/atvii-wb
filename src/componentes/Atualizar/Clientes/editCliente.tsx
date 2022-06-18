@@ -42,7 +42,7 @@ export default class EditCliente extends Component<props> {
                         </div>
                         <div className="input-field col s6">
                             <input id="email" type="email" className="validate" />
-                            <label htmlFor="email">e-mail</label>
+                            <label htmlFor="email">E-mail</label>
                         </div>
                     </div>
                     <div className="row">

@@ -1,6 +1,7 @@
 import { Component } from "react";
-import './listarProdutos.css'
 import 'materialize-css/dist/css/materialize.min.css'
+import { Link } from "react-router-dom";
+
 
 type props = {
     tema: string
@@ -10,7 +11,7 @@ type props = {
 export default class Produtos extends Component<props> {
 
     render() {
-        let estiloBotao = `btn waves-effect waves-light ${this.props.tema}`
+
         return (
             <>
                 <div className="row">
@@ -38,8 +39,12 @@ export default class Produtos extends Component<props> {
                                 <td>Limpeza capilar</td>
                                 <td>10</td>
                                 <td className="espaço">
-                                    <a href=""><i className="material-icons espaço1">edit</i></a>
-                                    <a href=""> <i className="material-icons espaço1 ">delete</i></a>
+                                    <Link to = "/editProduto">
+                                        <i className="material-icons espaço1">edit</i>
+                                    </Link>
+                                    <Link to = "/">
+                                        <i className="material-icons espaço1 ">delete</i>
+                                    </Link>
                                 </td>
                             </tr>
                             <tr>
@@ -50,8 +55,12 @@ export default class Produtos extends Component<props> {
                                 <td>Limpeza capilar</td>
                                 <td>10</td>
                                 <td className="espaço">
-                                    <a href=""><i className="material-icons espaço1">edit</i></a>
-                                    <a href=""> <i className="material-icons espaço1 ">delete</i></a>
+                                    <Link to = "/editProduto">
+                                        <i className="material-icons espaço1">edit</i>
+                                    </Link>
+                                    <Link to = "/">
+                                        <i className="material-icons espaço1 ">delete</i>
+                                    </Link>
                                 </td>
                             </tr>
                         </tbody>
