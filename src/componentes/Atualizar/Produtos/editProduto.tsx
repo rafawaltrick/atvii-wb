@@ -17,32 +17,32 @@ export default class EditProduto extends Component<props> {
                         <div className="row">
                             <h2 className="center">Editar Produto</h2>
                             <div className="input-field col s6">
-                                <input id="first_name" type="text" />
-                                <label htmlFor="first_name">Nome Produto</label>
+                                <input id="Nome Produto" type="text" />
+                                <label htmlFor="Nome Produto">Nome Produto</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" />
-                                <label htmlFor="last_name">Preço</label>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="input-field col s6">
-                                <input id="telefone" type="text" className="validate" />
-                                <label htmlFor="telefone">Codigo do Produto</label>
-                            </div>
-                            <div className="input-field col s6">
-                                <input id="email" type="email" className="validate" />
-                                <label htmlFor="email">Descrição do produto</label>
+                                <input id="Preço" type="text" />
+                                <label htmlFor="Preço">Preço</label>
                             </div>
                         </div>
                         <div className="row">
                             <div className="input-field col s6">
-                                <input id="email" type="email" className="validate" />
-                                <label htmlFor="email">Categoria</label>
+                                <input id="Codigo do Produto" type="text" className="validate" />
+                                <label htmlFor="Codigo do Produto">Codigo do Produto</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="telefone" type="text" className="validate" />
-                                <label htmlFor="telefone">Quantidade</label>
+                                <input id="Descrição do produto" type="text" className="validate" />
+                                <label htmlFor="Descrição do produto">Descrição do produto</label>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="input-field col s6">
+                                <input id="Categoria" type="text" className="validate" />
+                                <label htmlFor="Categoria">Categoria</label>
+                            </div>
+                            <div className="input-field col s6">
+                                <input id="Quantidade" type="text" className="validate" />
+                                <label htmlFor="Quantidade">Quantidade</label>
                             </div>
                         </div>
                         <div className="row">

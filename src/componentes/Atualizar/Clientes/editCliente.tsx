@@ -17,12 +17,12 @@ export default class EditCliente extends Component<props> {
                     <div className="row">
                         <h2 className="center">Editar Cliente</h2>
                         <div className="input-field col s6">
-                            <input id="first_name" type="text" className="validate" />
-                            <label htmlFor="first_name">Nome</label>
+                            <input id="Nome" type="text" className="validate" />
+                            <label htmlFor="Nome">Nome</label>
                         </div>
                         <div className="input-field col s6">
-                            <input id="last_name" type="text" className="validate" />
-                            <label htmlFor="last_name">Nome Social</label>
+                            <input id="Nome Social" type="text" className="validate" />
+                            <label htmlFor="Nome Social">Nome Social</label>
                         </div>
                     </div>
                     <div className="row">
@@ -31,8 +31,8 @@ export default class EditCliente extends Component<props> {
                             <label htmlFor="RG">RG</label>
                         </div>
                         <div className="input-field col s6">
-                            <input id="email" type="email" className="validate" />
-                            <label htmlFor="email">CPF</label>
+                            <input id="CPF" type="text" className="validate" />
+                            <label htmlFor="CPF">CPF</label>
                         </div>
                     </div>
                     <div className="row">
@@ -41,7 +41,7 @@ export default class EditCliente extends Component<props> {
                             <label htmlFor="telefone">telefone</label>
                         </div>
                         <div className="input-field col s6">
-                            <input id="email" type="email" className="validate" />
+                            <input id="email" type="text" className="validate" />
                             <label htmlFor="email">E-mail</label>
                         </div>
                     </div>
