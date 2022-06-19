@@ -9,6 +9,7 @@ import EditCliente from "../Atualizar/Clientes/editCliente";
 import EditProduto from "../Atualizar/Produtos/editProduto";
 import EditServico from "../Atualizar/Servicos/editServico";
 import Consumo from "../Consumo/ConsumoCli";
+import Consumos from "../Consumo/Consumos";
 
 
 
@@ -37,6 +38,7 @@ export default class AppRoutes extends Component <{}, state> {
             <Route path="/editCliente" element={<EditCliente tema="purple lighten-4"/>} />
             <Route path="/editProduto" element={<EditProduto tema="purple lighten-4"/>} />
             <Route path="/editServico" element={<EditServico tema="purple lighten-4"/>} />
+            <Route path="/Consumos" element={<Consumos tema="purple lighten-4"/>} />
             <Route path="/Consumo" element={<Consumo tema="purple lighten-4"/>} />
         </Routes> 
     );

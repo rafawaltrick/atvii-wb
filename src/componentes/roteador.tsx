@@ -5,6 +5,7 @@ import ListaCliente from "./listaCliente";
 import Produtos from "./listagem/Produtos/Produtos";
 import Servicos from "./listagem/Servicos/Servicos";
 import Clientes from "./listagem/Clientes/Clientes";
+import Consumos from "./Consumo/Consumos";
 
 
 
@@ -38,7 +39,7 @@ export default class Roteador extends Component<{}, state> {
     }
 
     render() {
-        let barraNavegacao = <BarraNavegacao tema="purple lighten-4" botoes={['TOP-Clientes', 'Cadastros','Produtos','Servicos','Clientes']}/>
+        let barraNavegacao = <BarraNavegacao tema="purple lighten-4" botoes={['TOP-Clientes', 'Cadastros','Produtos','Servicos','Clientes','Consumos']}/>
         
         if (this.state.tela === 'TOP-Clientes') {
             return (
@@ -76,6 +77,14 @@ export default class Roteador extends Component<{}, state> {
                 <>
                 {barraNavegacao}
                 <Clientes tema="purple lighten-4" />
+                </>
+            )
+        }
+        if (this.state.tela === 'Consumos') {
+            return (
+                <>
+                {barraNavegacao}
+                <Consumos tema="purple lighten-4" />
                 </>
             )
         }

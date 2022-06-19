@@ -4,6 +4,7 @@ import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
 import { Link } from "react-router-dom";
 
+
 type props = {
     tema: string,
     botoes: string[]
