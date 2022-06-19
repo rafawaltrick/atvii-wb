@@ -18,31 +18,31 @@ export default class FormularioCadastroCliente extends Component<props> {
                     <div className="row">
                         <h2 className="center">Cadastro Cliente</h2>
                         <div className="input-field col s6">
-                            <input id="first_name" type="text" className="validate" />
-                            <label htmlFor="first_name">Nome</label>
+                            <input id="Nome"  type="text" />
+                            <label htmlFor="Nome">Nome</label>
                         </div>
                         <div className="input-field col s6">
-                            <input id="last_name" type="text" className="validate" />
-                            <label htmlFor="last_name">Nome Social</label>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="input-field col s6">
-                            <input id="telefone" type="text" className="validate" />
-                            <label htmlFor="telefone">RG</label>
-                        </div>
-                        <div className="input-field col s6">
-                            <input id="email" type="email" className="validate" />
-                            <label htmlFor="email">CPF</label>
+                            <input id="Nome Social" type="text"  />
+                            <label htmlFor="Nome Social">Nome Social</label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="input-field col s6">
-                            <input id="telefone" type="text" className="validate" />
+                            <input id="RG" type="text" />
+                            <label htmlFor="RG">RG</label>
+                        </div>
+                        <div className="input-field col s6">
+                            <input id="CPF" type="text"  />
+                            <label htmlFor="CPF">CPF</label>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col s6">
+                            <input id="telefone" type="text"  />
                             <label htmlFor="telefone">telefone</label>
                         </div>
                         <div className="input-field col s6">
-                            <input id="email" type="email" className="validate" />
+                            <input id="email" type="text"  />
                             <label htmlFor="email">e-mail</label>
                         </div>
                     </div>
@@ -59,33 +59,34 @@ export default class FormularioCadastroCliente extends Component<props> {
                     <form className="col s12 box1">
                         <div className="row">
                             <h2 className="center">Cadastro Produto</h2>
+
                             <div className="input-field col s6">
-                                <input id="first_name" type="text" />
-                                <label htmlFor="first_name">Nome Produto</label>
+                                <input id="Produto" type="text" />
+                                <label htmlFor="Produto">Nome Produto</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" />
-                                <label htmlFor="last_name">Preço</label>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="input-field col s6">
-                                <input id="telefone" type="text" className="validate" />
-                                <label htmlFor="telefone">Codigo do Produto</label>
-                            </div>
-                            <div className="input-field col s6">
-                                <input id="email" type="email" className="validate" />
-                                <label htmlFor="email">Descrição do produto</label>
+                                <input id="Preço" type="text"/>
+                                <label htmlFor="Preço">Preço</label>
                             </div>
                         </div>
                         <div className="row">
                             <div className="input-field col s6">
-                                <input id="email" type="email" className="validate" />
-                                <label htmlFor="email">Categoria</label>
+                                <input id="Codigo do Produto" type="text"/>
+                                <label htmlFor="Codigo do Produto">Codigo do Produto</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="telefone" type="text" className="validate" />
-                                <label htmlFor="telefone">Quantidade</label>
+                                <input id="Descrição do produto" type="text" />
+                                <label htmlFor="Descrição do produto">Descrição do produto</label>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="input-field col s6">
+                                <input id="categoria"  type="text" />
+                                <label htmlFor="categoria">Categoria</label>
+                            </div>
+                            <div className="input-field col s6">
+                                <input id="Quantidade" type="text" />
+                                <label htmlFor="Quantidade">Quantidade</label>
                             </div>
                         </div>
                         <div className="row">
@@ -103,18 +104,18 @@ export default class FormularioCadastroCliente extends Component<props> {
                         <div className="row">
                             <h2 className="center">Cadastro Serviço</h2>
                             <div className="input-field col s6">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Nome</label>
+                                <input id="nome Servico"  type="text" />
+                                <label htmlFor="nome Servico">Nome Servico</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Preço</label>
+                                <input id="preço"  type="text"  />
+                                <label htmlFor="preço">Preço</label>
                             </div>
                         </div>
                         <div className="row">
                             <div className="input-field col s6">
-                                <input id="telefone" type="text" className="validate" />
-                                <label htmlFor="telefone">Descrição</label>
+                                <input id="Descricao" type="text"  />
+                                <label htmlFor="Descricao">Descrição</label>
                             </div>
 
                         </div>
