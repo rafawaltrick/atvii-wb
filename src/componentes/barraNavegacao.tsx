@@ -4,7 +4,6 @@ import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
 import { Link } from "react-router-dom";
 
-
 type props = {
     tema: string,
     botoes: string[]
@@ -14,15 +13,19 @@ export default class BarraNavegacao extends Component<props> {
     constructor(props: props | Readonly<props>) {
         super(props)
         this.gerarListaBotoes = this.gerarListaBotoes.bind(this)
+
     }
+    
     
 
     componentDidMount() {
-        document.addEventListener('DOMContentLoaded', function () {
             let elems = document.querySelectorAll('.sidenav');
-            M.Sidenav.init(elems)
-        });
+            M.Sidenav.init(elems) 
+
     }
+
+
+
 
     gerarListaBotoes() {
         if (this.props.botoes.length <= 0) {
@@ -39,6 +42,7 @@ export default class BarraNavegacao extends Component<props> {
 
     render() {
         let estilo = `${this.props.tema}`
+        
         return (
             <>
                 <nav className={estilo}>

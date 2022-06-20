@@ -23,23 +23,11 @@ export default class Roteador extends Component<{}, state> {
         }
     }
 
-    componentDidMount() {
-        document.addEventListener('DOMContentLoaded', function () {
-            let elems = document.querySelectorAll('.sidenav');
-            M.Sidenav.init(elems)
-        });
-    }
 
-    selecionarView(novaTela: string, evento: Event) {
-        evento.preventDefault()
-        console.log(novaTela);
-        this.setState({
-            tela: novaTela
-        })
-    }
+    
 
     render() {
-        let barraNavegacao = <BarraNavegacao tema="purple lighten-4" botoes={['TOP-Clientes', 'Cadastros','Produtos','Servicos','Clientes','Consumos']}/>
+        let barraNavegacao = <BarraNavegacao  tema="purple lighten-4" botoes={['TOP-Clientes', 'Cadastros','Produtos','Servicos','Clientes','Consumos']}/>
         
         if (this.state.tela === 'TOP-Clientes') {
             return (
