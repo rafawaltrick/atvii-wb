@@ -21,7 +21,7 @@ Teu  objetivo  e  desenvolver  todas  as  interfaces,  em  HTML.  Não  há  nec
 - Faça o clone do repositório:
 
 ```
-git clone https://github.com/rodrigoribeiro027/atviii
+git clone https://github.com/rodrigoribeiro027/atvii-wb
 ```
 - Na pasta raiz do projeto, digite:
 ```
