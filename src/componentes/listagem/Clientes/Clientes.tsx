@@ -1,17 +1,26 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import { Link } from "react-router-dom";
 
 
 
-type props = {
+type iprops = {
     tema: string
 }
 
 
-export default class Clientes extends Component<props> {
-
-    render() {
+const Clientes: React.FC<iprops> = (props)=> {
+    const padrao = [{
+        nome:"Rafael", nomeSocial:"Rafel", cpf:"12", rg:"34", telefone:"56", id:1
+    },{
+        nome:"Joel", nomeSocial:"Jo", cpf:"13", rg:"33", telefone:"53", id:2
+    },{
+        nome:"Felipe", nomeSocial:"Lipe", cpf:"17", rg:"37", telefone:"57", id:3
+    },{
+        nome:"Felizberto", nomeSocial:"Berto", cpf:"12", rg:"32", telefone:"52", id:4
+    }]
+    const[clientes, setClientes] = React.useState(padrao)
+    
         return (
             <>
                 <div className="row">
@@ -30,12 +39,13 @@ export default class Clientes extends Component<props> {
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>Rodrigo Ribeiro</td>
-                                <td>Rodrigo</td>
-                                <td>444222333-8</td>
-                                <td>55.898.878/85</td>
-                                <td>10-9820-2048</td>
+                            {clientes.map((c:any)=>(
+                                <tr key={c.id}>
+                                <td>{c.nome}</td>
+                                <td>{c.nomeSocial}</td>
+                                <td>{c.cpf}</td>
+                                <td>{c.rg}</td>
+                                <td>{c.telefone}</td>
                                 <td className="espaço">
                                     <Link to = "/Consumo">
                                         <i className="material-icons espaço1">local_grocery_store</i>
@@ -48,11 +58,14 @@ export default class Clientes extends Component<props> {
                                     </Link>
                                 </td>
                             </tr>
+                            ))}
+                            
                         </tbody>
                     </table>
                 </div>
             </>
 
         )
-    }
+    
 }
+export default Clientes

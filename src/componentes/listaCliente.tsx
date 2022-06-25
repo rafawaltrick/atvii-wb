@@ -1,15 +1,44 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Component } from "react";
+import React, { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import './cliente.css'
 
-type props = {
+type iprops = {
     tema: string
 }
 
-export default class ListaCliente extends Component<props> {
-    render() {
+const ListaCliente: React.FC<iprops> = (props) => {
+    const masculino = [
+        {nome:"José", email:"jose.marcondes@gmail.com", telefone:"12-997765456"}
+    ]
         
+    const feminino = [
+        {nome:"Maria", email:"maria.marcondes@gmail.com", telefone:"12-997765498"}
+    ]
+
+    const consumo = [
+        {nome:"Maria", quantidade:"15"}
+    ]
+
+    const maiorConsumo = [
+        {nome:"José", quantidade:"21"}
+    ]
+
+    const menorConsumo = [
+        {nome:"Maria", quantidade:"15"}
+    ]
+
+    const cliente5Mais = [
+        {id:"2", nome:"José", preco:"15"}
+    ]
+
+    const produtoMasculino = [
+        {nome:"Shampoo"}
+    ]
+
+    const produtoFeminino = [
+        {nome:"Hidratante"}
+    ]
 
         return (
             <>
@@ -28,21 +57,15 @@ export default class ListaCliente extends Component<props> {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Julian Gomes Rodrigues</td>
-                                    <td>JulianGomesRodrigues@teleworm.us</td>
-                                    <td>12 13647-9601</td>
+                                {masculino.map((m:any, i:any)=>(
+                                <tr key={i}>
+                                    <td>{m.nome}</td>
+                                    <td>{m.email}</td>
+                                    <td>{m.telefone}</td>
                                 </tr>
-                                <tr>
-                                    <td>Bruno Alves Lima</td>
-                                    <td>BrunoAlvesLima@dayrep.com</td>
-                                    <td>12 15843-0000</td>
-                                </tr>
-                                <tr>
-                                    <td>José Gomes Ferreira</td>
-                                    <td>JoseGomesFerreira@jourrapide.com</td>
-                                    <td>12 3986-14580</td>
-                                </tr>
+                                ))}
+                                
+                                
                             </tbody>
                         </table>
                     </div>
@@ -60,21 +83,14 @@ export default class ListaCliente extends Component<props> {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Matheus Rocha Fernandes</td>
-                                    <td>MatheusRochaFernandes@rhyta.com</td>
-                                    <td>12 32678-0002</td>
+                            {feminino.map((f:any, i:any)=>(
+                                <tr key={i}>
+                                    <td>{f.nome}</td>
+                                    <td>{f.email}</td>
+                                    <td>{f.telefone}</td>
                                 </tr>
-                                <tr>
-                                    <td>Livia Goncalves Fernandes</td>
-                                    <td>LiviaGoncalvesFernandes@dayrep.com</td>
-                                    <td>12 56789-0123</td>
-                                </tr>
-                                <tr>
-                                    <td>Emanuel Dias Barbosa</td>
-                                    <td>EmanuelDiasBarbosa@dayrep.com</td>
-                                    <td>12 12354-4356</td>
-                                </tr>
+                                ))}
+                                
                             </tbody>
                             </table>
                     </div>
@@ -93,51 +109,13 @@ export default class ListaCliente extends Component<props> {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
+                                    {consumo.map((c:any, i:any)=>(
+                                        <tr key={i}>
+                                            <td>{c.nome}</td>
+                                            <td>{c.quantidade}</td>
                                         </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rodrigo Ribeiro</td>
-                                            <td>12</td>
-                                        </tr>
-
+                                        ))}
+                                        
                                     </tbody>
                                 </table>
                         </div>
@@ -154,50 +132,13 @@ export default class ListaCliente extends Component<props> {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rodrigo R</td>
-                                        <td>12</td>
-                                    </tr>
+                                {maiorConsumo.map((mC:any, i:any)=> (
+                                    <tr key= {i}>
+                                    <td>{mC.nome}</td>
+                                    <td>{mC.quantidade}</td>
+                                </tr>
+                                ))}
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -214,50 +155,13 @@ export default class ListaCliente extends Component<props> {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Larusso</td>
-                                        <td>1</td>
-                                    </tr>
+                                {menorConsumo.map((mc:any, i:any)=> (
+                                    <tr key= {i}>
+                                    <td>{mc.nome}</td>
+                                    <td>{mc.quantidade}</td>
+                                </tr>
+                                ))}
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -277,32 +181,15 @@ export default class ListaCliente extends Component<props> {
                             </tr>
                         </thead>
 
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Shampoo</td>
-                                <td>10</td>
+                        <tbody>                            
+                            {cliente5Mais.map((c5:any, i:any)=> (
+                            <tr key={i}>
+                                <td>{c5.id}</td>
+                                <td>{c5.nome}</td>
+                                <td>{c5.preco}</td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Shampoo</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Shampoo</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Shampoo</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Shampoo</td>
-                                <td>10</td>
-                            </tr>
+                            ))}
+                                
                         </tbody>
                     </table>
                 </div>
@@ -318,16 +205,12 @@ export default class ListaCliente extends Component<props> {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Shampoo 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Shampoo 2</td>
-
-                                </tr>
-                                <tr>
-                                    <td>Shampoo 3</td>
-                                </tr>
+                            {produtoMasculino.map((pm:any, i:any)=> (
+                                <tr key={i}>
+                                <td>{pm.nome}</td>
+                            </tr>
+                            ))}
+                                
                             </tbody>
                         </table>
                     </div>
@@ -343,16 +226,12 @@ export default class ListaCliente extends Component<props> {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Shampoo 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Shampoo 2</td>
-                                </tr>
-                                <tr>
-                                    <td>Shampoo 3</td>
-
-                                </tr>
+                            {produtoFeminino.map((pf:any, i:any)=> (
+                                <tr key={i}>
+                                <td>{pf.nome}</td>
+                            </tr>
+                            ))}
+                               
                             </tbody>
                             </table>
                     </div>
@@ -360,5 +239,7 @@ export default class ListaCliente extends Component<props> {
                 </div>
             </>
         )
-    }
+    
 }
+
+export default ListaCliente
